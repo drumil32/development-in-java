@@ -6,12 +6,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
+//	field base Dependency Injection
 	@Autowired
 	@Qualifier("superCotraGameQualifier")
 	GamingConsole game;
+	
+//	Constructor base Dependency Injection
 //	public GameRunner(@Qualifier("superCotraGameQualifier") GamingConsole game) {
 //		this.game = game;
 //	}
+	
 	public void run() {
 		System.out.println("we are running this game :- "+game);
 		game.up();
