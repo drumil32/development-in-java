@@ -1,5 +1,10 @@
 package com.sadhulearning01.demo01.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("superCotraGameQualifier")
 public class SuperCotraGame implements GamingConsole{
 	public void up() {
 		System.out.println("moving up superContra");
