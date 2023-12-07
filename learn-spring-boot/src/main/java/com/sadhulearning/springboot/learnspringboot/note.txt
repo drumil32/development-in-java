@@ -1,0 +1,8 @@
+
+// diffrent logging levels
+// trace
+// debug
+// info
+// warning
+// error
+// off => will not log anything
